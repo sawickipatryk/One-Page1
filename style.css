@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+
+
+    --hero-text-color: rgba(255, 255, 255, 1);
+    --header-text-color: #111;
+    --description-text-color: rgba(0, 0, 0, 0.7);
+    --button-text-color: #fff;
+
+    --first-color: #fff;
+    --second-color: #03001C;
+    --button-color: rgb(250, 79, 67);
+
+    --body-font: 'Rubik', sans-serif;
+
+    --hero-font-size: 45px;
+    --header-font-size: 40px;
+    --sub-header-font-size: 15px;
+    --description-font-size: 15px;
+
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --z-fixed: 999
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font)
+}
+
+.container {
+    max-width: 1296px;
+    padding: 120px 10px 15px 10px;
+    margin: 0 auto;
+}
+
+.header {
+    color: var(--header-text-color);
+    font-size: var(--header-font-size);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.sub-header {
+    color: var(--second-color);
+    font-size: var(--sub-header-font-size);
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    font-weight: var(--font-regular);
+}
+
+.description {
+    color: var(--description-text-color);
+    font-size: var(--description-font-size);
+    margin-bottom: 15px;
+    line-height: 140%;
+}
+
+.button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+}
+
+.link {
+    background-color: transparent;
+    color: var(--button-text-color);
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    font-weight: var(--font-medium);
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--first-color);
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background: rgb(45, 44, 44);
+    background: linear-gradient(63deg, rgba(45, 44, 44, 1) 22%, rgba(0, 0, 0, 0.8211659663865546) 56%, rgba(56, 56, 56, 1) 100%);
+    padding-top: 70px;
+}
+
+.hero__text-cotainer {
+    text-align: center;
+}
+
+.hero__header {
+    color: var(--hero-text-color);
+    font-size: var(--hero-font-size);
+}
+
+.hero__sub-header {
+    position: relative;
+    color: var(--hero-text-color);
+    font-weight: var(--font-regular);
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.hero__sub-header::after,
+.hero__sub-header::before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 1px;
+    background-color: rgba(153, 153, 153, 0.5);
+}
+
+.hero__sub-header::after {
+    top: 0;
+    left: 10px;
+}
+
+.hero__sub-header::before {
+    top: 0;
+    right: 20px;
+}
+
+.hero__img-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero__img {
+    width: 350px;
+}
+
+.figures__text-container {
+    text-align: center;
+}
+
+.figures__header {
+    position: relative;
+}
+
+.figures__header::after,
+.figures__header::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background-color: rgba(153, 153, 153, 1);
+}
+
+.figures__header::after {
+    top: 50%;
+    left: 20px;
+}
+
+.figures__header::before {
+    top: 50%;
+    right: 20px;
+}
+
+.figures__pice-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(56, 56, 56, 1);
+    color: var(--first-color);
+    margin-bottom: 10px;
+    padding: 20px 10px;
+}
+
+.figures__pice-name {
+    color: var(--first-color);
+}
+
+.figures__pice-descirption {
+    color: rgb(153, 153, 153);
+}
+
+.figures__pices-container.container {
+    padding: 20px 10px;
+}
+
+.figures__img-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.figures__img {
+    width: 70%;
+}
+
+.figures__dimension {
+    color: var(--button-color);
+    margin-bottom: 5px;
+}
+
+.chessboard__text-container {
+    text-align: center;
+}
