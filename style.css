@@ -36,7 +36,7 @@
 }
 
 .container {
-    max-width: 1296px;
+    max-width: 1400px;
     padding: 120px 10px 15px 10px;
     margin: 0 auto;
 }
@@ -226,4 +226,190 @@ header {
 .chessboard__text-container {
     text-align: center;
     margin-bottom: 40px;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        padding-top: 120px;
+    }
+
+    .hero__img {
+        width: 500px;
+    }
+
+    .hero__sub-header::after {
+        left: -80px;
+        height: 250px;
+    }
+
+    .hero__sub-header::before {
+        right: -70px;
+        height: 250px;
+    }
+
+    .figures__header::after {
+        width: 200px;
+    }
+
+    .figures__header::before {
+        width: 200px;
+    }
+
+    .figures__pices-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .figures__pice-card:nth-child(odd) {
+        margin-right: 10px;
+    }
+
+    .figures__pice-card {
+        width: 45%;
+        height: 550px;
+    }
+}
+
+@media screen and (min-width:1028px) {
+    :root {
+
+        --hero-font-size: 65px;
+        --header-font-size: 45px;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .hero__img {
+        width: 550px;
+    }
+
+    .figures__container {
+        padding: 180px 10px 15px 10px;
+    }
+
+    .figures__header::after {
+        width: 300px;
+    }
+
+    .figures__header::before {
+        width: 300px;
+    }
+
+    .figures__pices-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .figures__pice-card:nth-child(odd) {
+        margin-right: 10px;
+    }
+
+    .figures__pice-card {
+        width: 45%;
+        height: 600px;
+    }
+
+    .figures__pice-descirption {
+        font-size: calc(var(--header-font-size) / 4);
+    }
+
+    .chessboard__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .chessboard__text-container {
+        margin-bottom: 0px;
+    }
+
+    .chessboard__left-container {
+        width: 50%;
+    }
+
+    .chessboard__right-container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1268px) {
+    :root {
+
+        --hero-font-size: 90px;
+        --sub-header-font-size: 15px;
+        --description-font-size: 15px;
+    }
+
+    .button {
+        padding: 10px 40px;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .hero__img {
+        width: 650px;
+    }
+
+    .figures__container {
+        padding: 250px 10px 15px 10px;
+    }
+
+    .figures__pice-card:nth-child(n) {
+        margin-right: 0.5px;
+    }
+
+    .figures__pice-card {
+        flex-direction: row;
+        width: 30%;
+        height: auto;
+        margin: 0.5px;
+        padding: 10px;
+    }
+
+    .figures__figure-container {
+        width: 50%;
+    }
+
+    .figures__pice-text-container {
+        width: 50%;
+    }
+
+    .figures__img {
+        width: 100%;
+    }
+
+    .chessboard__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .chessboard__text-container {
+        margin-bottom: 0px;
+        padding: 40px;
+    }
+
+    .chessboard__left-container {
+        width: 50%;
+    }
+
+    .chessboard__right-container {
+        width: 50%;
+    }
+
+    .chessboard__img-container img {
+        width: 87%;
+    }
 }
